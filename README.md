@@ -10,6 +10,6 @@ dari pengetahuan yang sudah saya pelajari. selain PHP ada Beberapa teknologi yan
 <h3>Device 🤩</h3>
 
 <p>
-    💻 ThinkPad T440p (Windows 10)
-    <br> 📱 Asus Max Pro M1
+    💻 ThinkPad T440p (OpenSuse Tumbleweed)
+    <br> 📱 Redmi Note 8
 </p>
