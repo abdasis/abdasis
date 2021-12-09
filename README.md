@@ -15,5 +15,5 @@ dari pengetahuan yang sudah saya pelajari. selain PHP ada Beberapa teknologi yan
 </p>
 
 
-<h3>Pencapaian</h3>
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=abdasis&repo=abdasis)](https://github.com/abdasis/github-readme-stats)
+<h3>Pencapaian 👌</h3>
+![Asis's GitHub stats](https://github-readme-stats.vercel.app/api?username=abdasis&show_icons=true&theme=default&show_icons=true&count_private=true)
