@@ -16,5 +16,4 @@ dari pengetahuan yang sudah saya pelajari. selain PHP ada Beberapa teknologi yan
 
 
 <h3>Pencapaian</h3>
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
-
+[![Asis's GitHub stats](https://github-readme-stats.vercel.app/api?username=abdasis)](https://github.com/abdasis/github-readme-stats)
