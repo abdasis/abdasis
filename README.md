@@ -13,3 +13,8 @@ dari pengetahuan yang sudah saya pelajari. selain PHP ada Beberapa teknologi yan
     💻 ThinkPad T440p (OpenSuse Tumbleweed)
     <br> 📱 Redmi Note 8
 </p>
+
+
+<h3>Pencapaian</h3>
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra&show_icons=true&theme=radical)
+
