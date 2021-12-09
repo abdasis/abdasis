@@ -17,4 +17,4 @@ dari pengetahuan yang sudah saya pelajari. selain PHP ada Beberapa teknologi yan
 
 <h3>Pencapaian 👌</h3>
 <img alt="Asis&#39;s GitHub stats" src="https://github-readme-stats.vercel.app/api?username=abdasis&amp;show_icons=true&amp;theme=default&amp;show_icons=true&amp;count_private=true"/>
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+[<img alt="Top Langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdasis&amp;layout=compact"/>]
