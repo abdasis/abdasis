@@ -16,4 +16,4 @@ dari pengetahuan yang sudah saya pelajari. selain PHP ada Beberapa teknologi yan
 
 
 <h3>Pencapaian</h3>
-[![Asis's GitHub stats](https://github-readme-stats.vercel.app/api?username=abdasis)](https://github.com/abdasis/github-readme-stats)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=abdasis&repo=abdasis)](https://github.com/abdasis/github-readme-stats)
