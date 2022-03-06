@@ -1,19 +1,21 @@
-<h1>Hi there, I'm Abd. Asis 👨‍💻</h1>
+## Hi saya Abdul Aziz👋
 
-<p align="center">
-    <img height="270px" width="auto" src="https://github.com/abdasis/abdasis/blob/98443ad079b0a7a0d45d1b5e3f8186bb9ebc1ecd/programmer-gif.gif" alt="">
-</p>
+I'm a Software Engineer from **Indonesia** using PHP and Laravel Framework.
 
-Saya <b>Software Engineer</b> berasal dari Indonesia, dengan bahasa pemrograman utama <b>PHP</b> suka bekerja dengan framework <b>Laravel</b> selain senang di bagian Backend juga senang dalam bagian Frontend, selain ngoding saya juga senang menulis artikel
-dari pengetahuan yang sudah saya pelajari. selain PHP ada Beberapa teknologi yang saya sukai seperti ReactJS, Pyhthon (Django)
+Currently, I am working as
+- 🔭 Founder [Diskusi Koding](https://diskusikoding.com). Platform for sharing about programming.
+- 📧 How to reach me [id.abdasis@gmail.com](mailto:id.abdasis@gmail.com)
 
-<h3>Device 🤩</h3>
+Need a website or apps ? contact me to start business. 
 
-<p>
-    💻 ThinkPad T440p (OpenSuse Tumbleweed)
-    <br> 📱 Redmi Note 8
-</p>
+**Languages and Tools:**  
 
-
-<h3>Pencapaian 👌</h3>
-<img alt="Asis&#39;s GitHub stats" src="https://github-readme-stats.vercel.app/api?username=abdasis&amp;show_icons=true&amp;theme=default&amp;show_icons=true&amp;count_private=true"/>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/laravel/laravel.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/wordpress.png"></code>
+## Find me around the web 🌎:
+- my website [apsyadira.com](https://apsyadira.com)
+- 💬 Ask me about anything, I am happy to help;
+- 📫 How to reach me: email me, or Tweet me at [Twitter/apsyadiraa](https://twitter.com/apsyadiraa) for quick response.
