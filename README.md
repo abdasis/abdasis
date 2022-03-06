@@ -4,7 +4,7 @@ I'm a Software Engineer from **Indonesia** using PHP and Laravel Framework.
 
 Currently, I am working as
 - 🔭 Founder [Diskusi Koding](https://diskusikoding.com). Platform for sharing about programming.
-- 📧 How to reach me [id.abdasis@gmail.com](mailto:id.abdasis@gmail.com)
+- 📬 How to reach me [id.abdasis@gmail.com](mailto:id.abdasis@gmail.com)
 
 Need a website or apps ? contact me to start business. 
 
