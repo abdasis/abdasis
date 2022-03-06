@@ -14,8 +14,7 @@ Need a website or apps ? contact me to start business.
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/laravel/laravel.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/wordpress.png"></code>
-## Find me around the web 🌎:
-- my website [apsyadira.com](https://apsyadira.com)
-- 💬 Ask me about anything, I am happy to help;
-- 📫 How to reach me: email me, or Tweet me at [Twitter/apsyadiraa](https://twitter.com/apsyadiraa) for quick response.
+<code><img height="25" src="https://raw.githubusercontent.com/abdasis/abdasis/master/svg/icons8-wordpress-144.png"></code>
+### Find me around the web 🌎:
+- 🌐 My website [abdasis.my.id](https://abdasis.my.id)
+- 💬 Ask me about anything, I am happy to help
