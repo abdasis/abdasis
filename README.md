@@ -1,4 +1,4 @@
-## Hi saya Abdul Aziz👋
+## Hi 👋 I'm Abdul Aziz
 
 I'm a Software Engineer from **Indonesia** using PHP and Laravel Framework.
 
