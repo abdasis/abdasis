@@ -14,7 +14,7 @@ I'm a Software Engineer from Indonesia using PHP and Laravel Framework.<br><br> 
 
 
 ### 🌐 Socials:
-[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/abdasispif) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/abdasisdev) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/abdasis) [![](https://visitcount.itsvg.in/api?id=abdasis&icon=4&color=9)](https://visitcount.itsvg.in)
+[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/abdasispif) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/abdasisdev) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/idabdasis) [![](https://visitcount.itsvg.in/api?id=abdasis&icon=4&color=9)](https://visitcount.itsvg.in)
 
 
 ### 💰 You can help me by Donating
