@@ -3,6 +3,7 @@ title: "Implementasi Autentikasi Passkey di Aplikasi Laravel Kamu"
 datePublished: Mon Nov 25 2024 23:32:01 GMT+0000 (Coordinated Universal Time)
 cuid: cm3xnx78c000z08ic6gpva24w
 slug: implementasi-autentikasi-passkey-di-aplikasi-laravel-kamu
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/IGHRDkuhZns/upload/da93ff8302e9cac6facbb1dba3af1208.jpeg
 tags: laravel, php
 
 ---
