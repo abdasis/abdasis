@@ -1,8 +1,8 @@
 ---
-title: "Tutorial Lengkap SDLC (Software Development Life Cycle)"
+title: "Memahami Apa itu SDLC (Software Development Life Cycle)"
 datePublished: Thu Dec 19 2024 01:21:53 GMT+0000 (Coordinated Universal Time)
 cuid: cm4umz3hi000309ldcgys6lww
-slug: tutorial-lengkap-sdlc-software-development-life-cycle
+slug: memahami-apa-itu-sdlc-software-development-life-cycle
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1734571285113/f62f9e8d-e2ec-49cf-bbd7-7598f017a319.jpeg
 tags: software-development, software-engineering
 
