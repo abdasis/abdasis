@@ -1,2 +1,114 @@
 # Program Pertama: Hello World
 
+Setelah semua persiapan dilakukan, saatnya kita mulai memasuki dunia pemrograman Go! Di bagian ini, kita akan membuat program pertama yang cukup terkenal di kalangan programmer: **Hello World**. Program ini akan membantu kita memahami dasar-dasar pemrograman dengan Go, termasuk bagaimana menyiapkan proyek, menulis kode, dan menjalankan program. Mari kita mulai!
+
+### 1. Inisialisasi Project
+
+Langkah pertama adalah membuat direktori untuk proyek kita. Buatlah folder bernama **hello-world** di lokasi yang kamu pilih. Setelah itu, buka terminal atau Command Line Interface (CLI) dan masuk ke direktori tersebut. Kemudian, jalankan perintah berikut untuk menginisialisasi proyek Go:
+
+```bash
+mkdir hello-world
+cd hello-world
+go mod init hello-world
+```
+
+Perintah tersebut akan membuat direktori **hello-world**, kemudian masuk ke dalamnya, dan menginisialisasi proyek Go dengan file `go.mod`.
+
+### 2. Load Project Folder ke Editor
+
+Setelah direktori proyek siap, buka editor pilihan kamu. Pada tutorial ini, kita akan menggunakan **VSCode**, tetapi kamu bisa menggunakan editor lain seperti **GoLand** atau **Vim**. Di dalam editor, cari menu untuk menambahkan proyek dan pilih folder **hello-world** yang baru saja kita buat.
+
+Jika menggunakan editor lain, biasanya cukup dengan drag-and-drop folder **hello-world** ke dalam editor.
+
+### 3. Menyiapkan File Program
+
+Di dalam folder proyek **hello-world**, buatlah sebuah file baru dengan ekstensi `.go`. Misalnya, kita akan menggunakan nama file **main.go**. Kamu bisa membuat file ini melalui CLI, browser, atau langsung melalui editor.
+
+Pastikan file ini berada di dalam folder proyek yang sama.
+
+### 4. Program Pertama: Hello World
+
+Sekarang, kita siap menulis kode program. Di dalam file **main.go**, tuliskan kode berikut:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello world")
+}
+```
+
+Setelah kode selesai ditulis, buka terminal dan masuk ke dalam direktori proyek, lalu jalankan perintah berikut untuk menjalankan program:
+
+```bash
+cd hello-world
+go run main.go
+```
+
+Jika semuanya berhasil, kamu akan melihat output berikut di terminal:
+
+```bash
+Hello world
+```
+
+Selamat! Kamu telah berhasil membuat program Go pertamamu!
+
+### 5. Penggunaan Keyword `package`
+
+Di dalam Go, setiap file program harus memiliki **package**. Package ini berfungsi untuk mengelompokkan kode dan mendefinisikan ruang lingkup program. Di dalam proyek Go, minimal satu file harus menggunakan package **main**. File yang ber-package **main** inilah yang akan dieksekusi pertama kali ketika program dijalankan.
+
+Contoh penulisan package adalah sebagai berikut:
+
+```go
+package main
+```
+
+### 6. Penggunaan Keyword `import`
+
+Di dalam Go, kita dapat menggunakan package eksternal dengan cara mengimpor package tersebut. Misalnya, di dalam program ini, kita mengimpor package **fmt**, yang menyediakan fungsi untuk mencetak output ke layar.
+
+Untuk mengimpor package, gunakan syntax berikut:
+
+```go
+import "fmt"
+```
+
+### 7. Penggunaan Fungsi `main()`
+
+Fungsi **main()** adalah fungsi yang pertama kali dipanggil ketika program dijalankan. Setiap program Go harus memiliki fungsi **main()** yang berada dalam file dengan package **main**.
+
+Berikut adalah contoh penulisan fungsi **main()**:
+
+```go
+func main() {
+    // kode program
+}
+```
+
+### 8. Penggunaan Fungsi `fmt.Println()`
+
+Fungsi **fmt.Println()** digunakan untuk mencetak teks ke layar (dalam hal ini, ke terminal atau CMD). Di dalam program **Hello World**, kita menggunakan fungsi ini untuk menampilkan tulisan **Hello world**.
+
+Berikut adalah contoh penggunaan **fmt.Println()**:
+
+```go
+fmt.Println("Hello world")
+```
+
+Fungsi **fmt.Println()** dapat menerima lebih dari satu parameter. Semua parameter yang diberikan akan dicetak dengan pemisah spasi. Sebagai contoh:
+
+```go
+fmt.Println("Hello", "world!", "how", "are", "you")
+```
+
+Outputnya akan menjadi:
+
+```bash
+Hello world! how are you
+```
+
+***
+
+Dengan langkah-langkah ini, kamu telah mempelajari dasar-dasar pembuatan program menggunakan bahasa pemrograman Go. Selanjutnya, kamu bisa bereksperimen lebih lanjut dengan menambahkan kode baru, memodifikasi output, dan mengeksplorasi lebih banyak fitur dari Go.

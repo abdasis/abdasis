@@ -1,2 +1,216 @@
 # Seleksi Kondisi (if, switch)
 
+### 1. Memahami Seleksi Kondisi di Golang
+
+Seleksi kondisi mengatur jalannya program berdasarkan benar atau salahnya sebuah kondisi (`bool`).\
+Gunanya mirip rambu lalu lintas: mengatur kapan kode boleh "jalan" atau "berhenti".
+
+Golang punya dua cara seleksi: `if-else` dan `switch`.\
+Perlu dicatat, Go **tidak mendukung** operator ternary seperti `isExist ? "ada" : "tidak ada"`.
+
+***
+
+### 2. Menggunakan if, else if, dan else
+
+Struktur `if-else` di Go lebih simpel: **tanpa tanda kurung** pada kondisi.
+
+**Contoh:**
+
+```go
+var point = 8
+
+if point == 10 {
+    fmt.Println("lulus dengan nilai sempurna")
+} else if point > 5 {
+    fmt.Println("lulus")
+} else if point == 4 {
+    fmt.Println("hampir lulus")
+} else {
+    fmt.Printf("tidak lulus. nilai kamu %d\n", point)
+}
+```
+
+Go langsung mengeksekusi blok pertama yang memenuhi syarat, lalu berhenti.\
+Gunakan `else if` untuk membuat percabangan banyak.
+
+***
+
+### 3. Membuat Variabel Sementara di if-else
+
+Golang mendukung deklarasi variabel **khusus di dalam kondisi**.
+
+**Manfaat variabel temporary:**
+
+* Membatasi cakupan variabel
+* Membuat kode lebih bersih
+* Menghindari penghitungan berulang
+
+**Contoh:**
+
+```go
+var point = 8840.0
+
+if percent := point / 100; percent >= 100 {
+    fmt.Printf("%.1f%% perfect!\n", percent)
+} else if percent >= 70 {
+    fmt.Printf("%.1f%% good\n", percent)
+} else {
+    fmt.Printf("%.1f%% not bad\n", percent)
+}
+```
+
+Variabel `percent` cuma bisa diakses di dalam `if-else` ini.
+
+***
+
+### 4. Menggunakan switch-case untuk Seleksi Kondisi
+
+`switch` cocok untuk **membandingkan satu nilai** terhadap banyak kemungkinan.
+
+**Contoh:**
+
+```go
+var point = 6
+
+switch point {
+case 8:
+    fmt.Println("perfect")
+case 7:
+    fmt.Println("awesome")
+default:
+    fmt.Println("not bad")
+}
+```
+
+Jika tidak ada case cocok, blok `default` otomatis dieksekusi.
+
+***
+
+### 5. Case untuk Banyak Kondisi Sekaligus
+
+Dalam satu `case`, bisa mengelompokkan **beberapa kondisi** dengan koma.
+
+**Contoh:**
+
+```go
+switch point {
+case 8:
+    fmt.Println("perfect")
+case 7, 6, 5, 4:
+    fmt.Println("awesome")
+default:
+    fmt.Println("not bad")
+}
+```
+
+Jika point adalah salah satu dari 7, 6, 5, atau 4, langsung masuk case "awesome".
+
+***
+
+### 6. Menambahkan Kurung Kurawal pada case dan default
+
+Pemakaian `{}` di dalam `case` dan `default` **opsional**, tapi sangat dianjurkan untuk:
+
+* Membuat kode lebih rapi
+* Mempermudah membaca banyak baris per case
+
+**Contoh:**
+
+```go
+default: {
+    fmt.Println("not bad")
+    fmt.Println("you can be better!")
+}
+```
+
+***
+
+### 7. switch Tanpa Nilai, Gaya if-else
+
+Di Go, `switch` bisa **tanpa variabel pembanding**. Ini membuat `switch` mirip seperti `if-else bertingkat`.
+
+**Contoh:**
+
+```go
+switch {
+case point == 8:
+    fmt.Println("perfect")
+case (point < 8) && (point > 3):
+    fmt.Println("awesome")
+default:
+    {
+        fmt.Println("not bad")
+        fmt.Println("you need to learn more")
+    }
+}
+```
+
+Sangat berguna untuk seleksi kondisi kompleks.
+
+***
+
+### 8. Menggunakan fallthrough untuk Melanjutkan Ke Case Berikutnya
+
+Biasanya di Go, setelah satu `case` terpenuhi, program langsung keluar dari `switch`.\
+Kalau mau **paksa lanjut ke case berikutnya**, pakai `fallthrough`.
+
+**Contoh:**
+
+```go
+switch {
+case point == 8:
+    fmt.Println("perfect")
+case (point < 8) && (point > 3):
+    fmt.Println("awesome")
+    fallthrough
+case point < 5:
+    fmt.Println("you need to learn more")
+default:
+    {
+        fmt.Println("not bad")
+        fmt.Println("you need to learn more")
+    }
+}
+```
+
+Dengan `fallthrough`, program lanjut ke case berikutnya meski kondisinya sebenarnya tidak memenuhi.
+
+***
+
+### 9. Seleksi Kondisi Bersarang (Nested)
+
+Buat kondisi dalam kondisi, alias **nested if/switch**, untuk logika lebih kompleks.
+
+**Contoh:**
+
+```go
+var point = 10
+
+if point > 7 {
+    switch point {
+    case 10:
+        fmt.Println("perfect!")
+    default:
+        fmt.Println("nice!")
+    }
+} else {
+    if point == 5 {
+        fmt.Println("not bad")
+    } else if point == 3 {
+        fmt.Println("keep trying")
+    } else {
+        fmt.Println("you can do it")
+        if point == 0 {
+            fmt.Println("try harder!")
+        }
+    }
+}
+```
+
+Cocok dipakai untuk validasi bertingkat.
+
+### Kesimpulan
+
+Seleksi kondisi di Golang adalah cara untuk mengatur alur eksekusi program berdasarkan kondisi tertentu. Dengan menggunakan `if-else` atau `switch`, kita bisa memutuskan blok kode mana yang akan dijalankan. Golang juga menyediakan fitur seperti variabel temporary di dalam `if`, penggunaan `fallthrough` dalam `switch`, dan pendekatan `switch` tanpa variabel. Memahami konsep seleksi kondisi memungkinkan kita menulis kode yang lebih efisien, jelas, dan mudah dipelihara. Selalu pilih metode seleksi yang sesuai dengan kebutuhan logika program yang sedang dikembangkan.
+
+***

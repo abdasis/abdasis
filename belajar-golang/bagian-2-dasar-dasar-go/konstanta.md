@@ -1,2 +1,114 @@
 # Konstanta
 
+Konstanta adalah variabel yang nilainya tetap dan tidak bisa diubah setelah dideklarasikan. Di Go, konstanta dibuat dengan keyword `const`, dan nilainya harus langsung diinisialisasi.
+
+```go
+const PI = 3.14
+```
+
+### 1. Kapan Menggunakan Konstanta?
+
+Gunakan konstanta untuk data yang sifatnya tetap, seperti:
+
+* Nilai pi (π)
+* Kecepatan cahaya
+* Konfigurasi tetap dalam aplikasi
+
+Ini membuat kode lebih aman, mudah dipahami, dan meminimalisir error.
+
+### 2. Cara Membuat Konstanta
+
+#### Dengan Tipe Data Tertentu
+
+```go
+const firstName string = "John"
+fmt.Print("Halo ", firstName, "!\n")
+```
+
+#### Tanpa Menyebutkan Tipe Data (Type Inference)
+
+```go
+const lastName = "Wick"
+fmt.Print("Nice to meet you ", lastName, "!\n")
+```
+
+Compiler akan otomatis menyesuaikan tipe berdasarkan nilai yang diberikan.
+
+### 3. Perbedaan fmt.Print() dan fmt.Println()
+
+* `fmt.Print()` tidak menambahkan spasi atau baris baru otomatis.
+* `fmt.Println()` menambahkan spasi antar parameter dan baris baru di akhir output.
+
+Contoh:
+
+```go
+fmt.Println("John", "Wick")   // Output: John Wick\n
+fmt.Print("John ", "Wick\n")  // Output: John Wick\n
+```
+
+### 4. Deklarasi Banyak Konstanta Sekaligus
+
+Kamu bisa mendeklarasikan beberapa konstanta dalam satu blok `const`:
+
+```go
+const (
+    square        = "kotak"
+    isToday bool  = true
+    numeric uint8 = 1
+    floatNum      = 2.2
+)
+```
+
+Bisa juga lebih singkat dalam satu baris:
+
+```go
+const satu, dua = 1, 2
+const tiga, empat string = "tiga", "empat"
+```
+
+Jika tipe dan nilai tidak disebutkan, Go akan menyalin dari konstanta di atasnya:
+
+```go
+const (
+    a = "konstanta"
+    b
+)
+```
+
+Pada contoh di atas, `b` otomatis bertipe string dan nilainya "konstanta".
+
+### 5. Konstanta Bertipe dan Tidak Bertipe
+
+#### Konstanta Bertipe
+
+Konstanta yang dideklarasikan dengan tipe eksplisit:
+
+```go
+const A int = 1
+```
+
+#### Konstanta Tidak Bertipe
+
+Konstanta yang tanpa tipe eksplisit:
+
+```go
+const B = 1
+```
+
+Tipe konstanta ini akan diputuskan otomatis saat digunakan.
+
+### 6. Konstanta Bersifat Read-Only
+
+Nilai konstanta **tidak bisa diubah** setelah deklarasi. Jika dipaksa mengubah, akan muncul error saat kompilasi.
+
+Contoh:
+
+```go
+const A = 1
+A = 2 // Error: cannot assign to A
+```
+
+***
+
+Kalau mau sekalian lanjut ke Bab 11, mau sekalian aku bantu lanjutkan juga? 🚀\
+Mau lanjutkan sekarang atau ada instruksi tambahan dulu?

@@ -1,2 +1,103 @@
 # Komentar
 
+Komentar adalah salah satu alat penting dalam pemrograman yang memungkinkan kita untuk menambahkan penjelasan atau catatan pada kode program. Komentar digunakan untuk menjelaskan blok kode tertentu, memberikan informasi tambahan, atau menonaktifkan kode yang tidak digunakan. Penting untuk dicatat bahwa komentar akan diabaikan oleh kompilator dan tidak mempengaruhi eksekusi program. Dalam Go, terdapat dua jenis komentar utama yang dapat digunakan: komentar inline dan komentar multiline. Mari kita bahas lebih lanjut mengenai keduanya.
+
+### 1. Komentar Inline
+
+Komentar inline di Go dimulai dengan tanda double slash `//`. Komentar ini hanya berlaku untuk satu baris, dan jika komentar lebih dari satu baris, kita harus menulis `//` di setiap barisnya. Berikut adalah contoh penggunaan komentar inline:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    // Menampilkan pesan hello world
+    fmt.Println("hello world")
+
+    // fmt.Println("Baris ini tidak akan dieksekusi")
+}
+```
+
+Pada contoh di atas, hanya `fmt.Println("hello world")` yang akan dieksekusi. Baris yang dimulai dengan `//` dianggap sebagai komentar oleh Go, sehingga tidak dieksekusi. Komentar inline ini sangat berguna untuk memberikan penjelasan singkat tentang suatu baris kode atau untuk menonaktifkan sementara kode tanpa menghapusnya.
+
+#### Praktik Penggunaan Komentar Inline
+
+Untuk mencoba kode di atas, kamu bisa membuat file baru dalam folder proyek Go kamu (baik menggunakan proyek baru atau proyek yang sudah ada). Isi file dengan kode di atas, kemudian jalankan program tersebut. Hasilnya, hanya tulisan `hello world` yang akan muncul di layar, sementara komentar akan diabaikan oleh compiler Go.
+
+### 2. Komentar Multiline
+
+Jika komentar yang ingin ditulis lebih panjang, komentar multiline adalah pilihan yang lebih baik. Komentar ini dimulai dengan tanda `/*` dan diakhiri dengan `*/`. Berikut adalah contoh penggunaan komentar multiline:
+
+```go
+/*
+    Menampilkan pesan hello world
+    Kode ini akan mencetak "hello world" ke layar
+*/
+fmt.Println("hello world")
+
+// fmt.Println("Baris ini tidak akan dieksekusi")
+```
+
+Komentar multiline memungkinkan kita untuk menulis komentar yang lebih panjang dan lebih terstruktur. Sama seperti komentar inline, komentar multiline juga akan diabaikan oleh compiler. Ini sangat berguna untuk memberikan penjelasan lebih mendalam tentang fungsionalitas kode atau blok kode yang lebih kompleks.
+
+### 3. Go Doc Comments
+
+Selain komentar biasa, Go juga memiliki komentar dokumentasi yang disebut dengan _doc comments_. Komentar ini digunakan untuk memberikan penjelasan mengenai paket, tipe data, fungsi, konstanta, dan variabel dalam kode Go. Komentar ini umumnya ditempatkan sebelum deklarasi paket, konstanta, fungsi, tipe data, atau variabel, dan bertujuan untuk memberikan dokumentasi yang dapat diekstrak menggunakan alat Go seperti `go doc`.
+
+Komentar dokumentasi harus ditulis dengan kalimat lengkap dan jelas, serta memberikan penjelasan mengenai apa yang dilakukan oleh kode tersebut. Komentar ini penting terutama untuk kode yang akan digunakan oleh orang lain atau untuk proyek open-source, karena dokumentasi yang baik akan memudahkan pemahaman dan penggunaan kode.
+
+#### Contoh Komentar Paket
+
+```go
+// Package path implements utility routines for manipulating slash-separated
+// paths.
+//
+// The path package should only be used for paths separated by forward
+// slashes, such as the paths in URLs. This package does not deal with
+// Windows paths with drive letters or backslashes; to manipulate
+// operating system paths, use the [path/filepath] package.
+package path
+```
+
+Pada contoh di atas, komentar dokumentasi menjelaskan tentang paket `path` yang berfungsi untuk menangani jalur yang dipisahkan dengan garis miring (`/`). Komentar ini memberi gambaran umum mengenai fungsi paket dan mengarahkan pengguna untuk menggunakan paket lain jika mereka perlu bekerja dengan jalur file sistem operasi yang lebih kompleks.
+
+#### Komentar untuk Perintah
+
+Komentar dokumentasi untuk perintah biasanya lebih panjang dan berisi penjelasan tentang bagaimana cara menggunakan perintah tersebut. Berikut adalah contoh komentar dokumentasi untuk perintah `gofmt`:
+
+```go
+/*
+Gofmt formats Go programs.
+It uses tabs for indentation and blanks for alignment.
+Alignment assumes that an editor is using a fixed-width font.
+
+Without an explicit path, it processes the standard input. Given a file,
+it operates on that file; given a directory, it operates on all .go files in
+that directory, recursively. (Files starting with a period are ignored.)
+By default, gofmt prints the reformatted sources to standard output.
+
+Usage:
+
+    gofmt [flags] [path ...]
+
+The flags are:
+
+    -d
+        Do not print reformatted sources to standard output.
+        If a file's formatting is different than gofmt's, print diffs
+        to standard output.
+    -w
+        Do not print reformatted sources to standard output.
+        If a file's formatting is different from gofmt's, overwrite it
+        with gofmt's version. If an error occurred during overwriting,
+        the original file is restored from an automatic backup.
+*/
+package main
+```
+
+Dalam komentar di atas, penulis menjelaskan bagaimana perintah `gofmt` digunakan untuk memformat program Go. Komentar ini memberikan informasi tentang opsi yang tersedia dan cara menggunakannya dengan jelas dan terstruktur. Komentar semacam ini sangat membantu bagi pengguna yang ingin memanfaatkan perintah tersebut dalam proyek mereka.
+
+### Kesimpulan
+
+Komentar dalam Go sangat penting untuk menjaga kualitas dan keterbacaan kode. Komentar inline dan multiline memiliki kegunaan masing-masing, tergantung pada panjang dan kompleksitas penjelasan yang ingin diberikan. Di samping itu, Go juga menyediakan fasilitas komentar dokumentasi yang membantu pengembang untuk membuat dokumentasi yang dapat dipahami dan digunakan oleh orang lain. Selalu gunakan komentar dengan bijak untuk meningkatkan pemahaman kode, terutama dalam proyek besar atau kolaboratif. Untuk referensi lebih lanjut, pastikan kamu membaca bab-bab lain tentang dokumentasi dan penggunaan komentar dalam kode Go yang lebih kompleks.
