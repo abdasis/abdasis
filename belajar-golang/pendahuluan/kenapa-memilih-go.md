@@ -12,6 +12,8 @@ Go dirancang dengan prinsip "less is more". Bahasa ini mengurangi kompleksitas t
 
 #### Konkruensi Tanpa Ribet
 
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 Golang menghadirkan konsep **Goroutines** dan **Channels** yang memungkinkan ribuan proses berjalan bersamaan dengan penggunaan resource yang sangat hemat. Fitur ini membuat Go sempurna untuk layanan berbasis real-time dan sistem skala besar.
 
 #### Penanganan Error Lebih Terkontrol
