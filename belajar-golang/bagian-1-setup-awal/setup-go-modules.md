@@ -4,7 +4,7 @@ Di bab ini, kita akan mempelajari cara membuat project baru menggunakan **Go Mod
 
 ***
 
-### 3.1. Penjelasan
+### 1. Penjelasan
 
 **Go Modules** adalah alat untuk manajemen dependensi dalam Go. Dengan Go Modules, kamu dapat dengan mudah menginisialisasi sebuah project dan mengelola dependensi pihak ketiga (third-party libraries) yang digunakan dalam project kamu.
 
@@ -14,7 +14,7 @@ Penting untuk diketahui bahwa di Go, istilah **module** (atau module) itu sama a
 
 ***
 
-### 3.2. Inisialisasi Project Menggunakan Go Modules
+### 2. Inisialisasi Project Menggunakan Go Modules
 
 Untuk memulai sebuah project baru dengan Go Modules, kita perlu menginisialisasi project tersebut menggunakan perintah `go mod init`.
 

@@ -13,7 +13,7 @@ Setelah mengunduh, silakan ikuti langkah-langkah instalasi sesuai dengan sistem 
 
 ***
 
-### 2.1. Instalasi Go di Windows
+### 1. Instalasi Go di Windows
 
 1. **Unduh Installer Go**\
    Kunjungi [https://golang.org/dl/](https://golang.org/dl/) dan pilih installer untuk Windows sesuai dengan jenis bit (32-bit atau 64-bit) yang digunakan.
@@ -32,7 +32,7 @@ Setelah mengunduh, silakan ikuti langkah-langkah instalasi sesuai dengan sistem 
 
 ***
 
-### 2.2. Instalasi Go di macOS
+### 2. Instalasi Go di macOS
 
 Cara termudah untuk menginstal Go di macOS adalah dengan menggunakan **Homebrew**.
 
@@ -66,7 +66,7 @@ Cara termudah untuk menginstal Go di macOS adalah dengan menggunakan **Homebrew*
 
 ***
 
-### 2.3. Instalasi Go di Linux
+### 3. Instalasi Go di Linux
 
 1.  **Unduh Arsip Installer**\
     Kunjungi [https://golang.org/dl/](https://golang.org/dl/) dan unduh arsip Go untuk Linux sesuai dengan arsitektur sistem kamu (32-bit atau 64-bit). Kamu bisa mengunduhnya melalui terminal menggunakan `wget` atau `curl`.
@@ -100,7 +100,7 @@ Cara termudah untuk menginstal Go di macOS adalah dengan menggunakan **Homebrew*
 
 ***
 
-### 2.4. Variabel GOROOT
+### 4. Variabel GOROOT
 
 Setelah berhasil menginstal Go, secara otomatis sebuah variabel lingkungan bernama **GOROOT** akan diatur. Variabel ini menunjukkan lokasi di mana Go terinstal. Sebagai contoh, di Windows, jika Go diinstal di `C:\go`, maka nilai GOROOT adalah `C:\go`.
 
@@ -114,7 +114,7 @@ Perintah tersebut akan menampilkan konfigurasi lingkungan, termasuk nilai dari G
 
 ***
 
-### 2.5. Instalasi Go Versi Unstable/Development
+### 5. Instalasi Go Versi Unstable/Development
 
 Jika kamu tertarik untuk mencoba fitur-fitur terbaru dari Go yang belum dirilis secara resmi, kamu bisa menginstal versi **unstable** atau **development**.
 
