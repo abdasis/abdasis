@@ -1,3 +1,7 @@
+---
+coverY: 0
+---
+
 # Instalasi Golang
 
 Sebelum mulai menulis kode dengan Go, langkah pertama yang perlu dilakukan adalah menginstal bahasa pemrograman ini di perangkat kamu. Panduan instalasi lengkap sebenarnya sudah tersedia di situs resmi Go ([https://golang.org/doc/install#install](https://golang.org/doc/install#install)), namun di bab ini, kami akan memberikan ringkasan langkah-langkah yang lebih sederhana agar kamu bisa mengikuti proses instalasi dengan mudah, terutama jika kamu baru pertama kali menggunakan Go.

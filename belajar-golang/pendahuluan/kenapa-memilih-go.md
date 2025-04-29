@@ -1,3 +1,7 @@
+---
+coverY: 0
+---
+
 # Kenapa memilih Go?
 
 ### Keunggulan Golang dalam Pengembangan Software

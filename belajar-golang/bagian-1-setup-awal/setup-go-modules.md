@@ -1,3 +1,7 @@
+---
+coverY: 0
+---
+
 # Setup Go Modules
 
 Di bab ini, kita akan mempelajari cara membuat project baru menggunakan **Go Modules**, yang merupakan cara resmi Go untuk mengelola dependensi dalam pengembangan perangkat lunak.
