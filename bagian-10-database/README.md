@@ -2,5 +2,5 @@
 icon: notebook
 ---
 
-# Pendahuluan
+# Bagian 10: Database
 

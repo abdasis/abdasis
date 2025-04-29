@@ -2,5 +2,5 @@
 icon: notebook
 ---
 
-# Pendahuluan
+# Bagian 12: Studi Kasus
 

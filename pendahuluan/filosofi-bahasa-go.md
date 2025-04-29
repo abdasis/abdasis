@@ -1,0 +1,2 @@
+# Filosofi Bahasa Go
+
