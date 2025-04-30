@@ -121,7 +121,8 @@ Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])
 
 #### 7. Praktik Terbaik
 
-1. **Kelompokkan rute** yang memerlukan middleware sama menggunakan `Route::middleware()->group(...)`.
+1. **Kelompokkan rute** yang memerlukan middleware sama menggunakan\
+   &#x20;`Route::middleware()->group(...)`.
 2. **Letakkan logika berat** di service atau policy, bukan langsung di middleware.
 3. **Gunakan named middleware** untuk kemudahan pembacaan kode.
 4. **Beri penamaan alias** yang deskriptif, misalnya `auth.user`, `throttle.api`, atau `verify.age`.
