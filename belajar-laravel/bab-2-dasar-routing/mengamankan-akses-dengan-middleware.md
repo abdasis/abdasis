@@ -1,7 +1,5 @@
 # Mengamankan Akses dengan Middleware
 
-### Bab: Mengamankan Akses dengan Middleware
-
 Middleware adalah lapisan pengecekan yang dijalankan sebelum permintaan HTTP mencapai logika aplikasi. Dengan middleware, Kamu dapat menerapkan aturan seperti autentikasi, otorisasi, atau validasi kondisi khusus—misalnya memblokir pengguna yang belum memenuhi syarat usia—sehingga akses ke rute tertentu dapat dikendalikan dengan rapi.
 
 ***
