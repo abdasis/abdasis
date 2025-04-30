@@ -1,7 +1,5 @@
 # Pengenalan Dasar Laravel
 
-### Ringkasan Bab
-
 Pada bab ini, Kamu akan memahami apa itu Laravel, latar belakang pembuatannya, filosofi utama, serta struktur arsitektur MVC yang menjadi fondasi kerjanya. Laravel diperkenalkan pertama kali oleh Taylor Otwell pada 2011 sebagai alternatif modern untuk framework PHP yang ada saat itu, membawa sintaks yang elegan dan ekosistem lengkap untuk mempercepat pengembangan aplikasi web. Kamu juga akan diperkenalkan pada komponen inti Laravel—seperti routing, Eloquent ORM, dan Blade—serta peran komunitas dalam menjaga framework ini selalu up-to-date dan aman.
 
 ***
