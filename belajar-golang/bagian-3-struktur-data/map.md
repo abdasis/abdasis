@@ -2,41 +2,56 @@
 
 ### 1. Mengenal Map dan Cara Penggunaan
 
-Map adalah struktur data yang menyimpan pasangan key dan value. Setiap data yang disimpan harus memiliki key yang unik, sedangkan valuenya bebas selama sesuai tipe yang ditentukan. Berbeda dengan slice yang memakai indeks numerik, map memungkinkan Kamu menggunakan tipe data lain sebagai key—yang penting unik.
+Map adalah struktur data berisi pasangan key dan value. Setiap key harus unik, dan digunakan sebagai identifier untuk mengakses valuenya.
 
 ```go
 var chicken = map[string]int{}
 chicken["januari"] = 50
 chicken["februari"] = 40
 
-fmt.Println(chicken["januari"]) // 50
-fmt.Println(chicken["mei"])     // 0 (default int)
+fmt.Println(chicken["januari"])
+fmt.Println(chicken["mei"])
 ```
 
-Jika key yang dipanggil belum tersedia, map akan mengembalikan nilai default dari tipe datanya.
+**Output:**
+
+```
+50
+0
+```
+
+Key `"mei"` belum pernah dimasukkan, maka menghasilkan nilai default `0` untuk `int`.
 
 ### 2. Inisialisasi Map
 
-Karena default map adalah `nil`, Kamu wajib menginisialisasinya sebelum digunakan agar tidak error. Bisa dengan `{}`, `make()`, atau `new()`.
+```go
+var data map[string]int
+data["one"] = 1 // error: assignment to entry in nil map
+
+data = map[string]int{}
+data["one"] = 1
+fmt.Println(data)
+```
+
+**Output:**
+
+```
+map[one:1]
+```
+
+Contoh inisialisasi:
 
 ```go
 var chicken1 = map[string]int{"januari": 50, "februari": 40}
-
 var chicken2 = map[string]int{
 	"januari":  50,
 	"februari": 40,
 }
-
-var chicken3 = map[string]int{}
-var chicken4 = make(map[string]int)
-var chicken5 = *new(map[string]int) // tipe pointer
 ```
 
-Semua cara di atas sah, tinggal disesuaikan kebutuhan. Gunakan `*` untuk ambil nilai dari hasil `new()` karena berupa pointer.
+Semua bentuk di atas menghasilkan map yang siap digunakan.
 
 ### 3. Iterasi dengan `for-range`
-
-Kamu bisa menelusuri semua item dalam map menggunakan `for-range`. Hasilnya akan mengembalikan key dan value.
 
 ```go
 var chicken = map[string]int{
@@ -50,37 +65,57 @@ for key, val := range chicken {
 }
 ```
 
-Urutan output bisa berbeda karena map tidak memiliki urutan tetap.
+**Output (urutan bisa berbeda):**
+
+```
+januari     : 50
+februari    : 40
+maret       : 34
+```
 
 ### 4. Menghapus Item
 
-Gunakan fungsi `delete()` untuk menghapus elemen berdasarkan key-nya.
-
 ```go
+var chicken = map[string]int{"januari": 50, "februari": 40}
+
+fmt.Println(len(chicken))
+fmt.Println(chicken)
+
 delete(chicken, "januari")
+
+fmt.Println(len(chicken))
+fmt.Println(chicken)
 ```
 
-Setelah dihapus, key tersebut tidak akan ditemukan lagi saat diakses.
+**Output:**
 
-### 5. Cek Apakah Key Ada
+```
+2
+map[februari:40 januari:50]
+1
+map[februari:40]
+```
 
-Untuk mengecek keberadaan key, gunakan dua variabel saat akses:
+### 5. Cek Keberadaan Key
 
 ```go
-val, ok := chicken["mei"]
+var chicken = map[string]int{"januari": 50, "februari": 40}
+val, exist := chicken["mei"]
 
-if ok {
+if exist {
 	fmt.Println(val)
 } else {
 	fmt.Println("data tidak ditemukan")
 }
 ```
 
-Variabel `ok` akan bernilai `true` jika key tersedia.
+**Output:**
 
-### 6. Gabungan Slice dan Map
+```
+data tidak ditemukan
+```
 
-Kamu bisa membuat slice yang tiap elemennya berupa map. Kombinasi ini umum digunakan untuk menyimpan kumpulan data dinamis seperti list siswa atau produk.
+### 6. Kombinasi Slice dan Map
 
 ```go
 var chickens = []map[string]string{
@@ -94,7 +129,15 @@ for _, chicken := range chickens {
 }
 ```
 
-Map dalam slice bisa memiliki key yang berbeda-beda di tiap elemen:
+**Output:**
+
+```
+male chicken blue
+male chicken red
+female chicken yellow
+```
+
+Contoh dengan key berbeda-beda:
 
 ```go
 var data = []map[string]string{
@@ -102,6 +145,18 @@ var data = []map[string]string{
 	{"address": "mangga street", "id": "k001"},
 	{"community": "chicken lovers"},
 }
+
+for _, item := range data {
+	fmt.Println(item)
+}
+```
+
+**Output:**
+
+```
+map[color:brown gender:male name:chicken blue]
+map[address:mangga street id:k001]
+map[community:chicken lovers]
 ```
 
 ***
