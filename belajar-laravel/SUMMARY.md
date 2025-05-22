@@ -40,3 +40,5 @@
 * [Bab 7: Penutup](bab-7-penutup/README.md)
   * [Promosi Buku dan Karya Lain](bab-7-penutup/promosi-buku-dan-karya-lain.md)
   * [Kata Penutup dan Semangat Belajar](bab-7-penutup/kata-penutup-dan-semangat-belajar.md)
+* [Bonus](bonus/README.md)
+  * [Cara Clone Private Repository GitHub di cPanel](bonus/cara-clone-private-repository-github-di-cpanel.md)
