@@ -91,5 +91,3 @@ Dengan mengikuti langkah-langkah di atas, Kamu bisa:
 * Sinkronisasi update GitHub ke hosting hanya dengan beberapa klik
 
 Jangan lupa pastikan Kamu tidak menggunakan passphrase saat generate SSH key agar proses cloning bisa berjalan dengan lancar di GitHub.
-
-Selanjutnya, kita akan bahas bab penting lainnya tentang **Continuous Deployment Otomatis dengan Git di cPanel** — tetap semangat!
